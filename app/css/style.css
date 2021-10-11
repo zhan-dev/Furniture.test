@@ -267,8 +267,15 @@ a:hover {
 }
 
 .h2 {
+  padding: 0 auto;
+  text-align: left;
   font-weight: 700;
   font-size: 48px;
-  border: 1px solid #44C697;
+  text-align: center;
+}
+
+.green_lit {
+  -webkit-box-shadow: inset 14px 0px #44C697;
+          box-shadow: inset 14px 0px #44C697;
 }
 /*# sourceMappingURL=style.css.map */

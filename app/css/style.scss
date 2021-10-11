@@ -240,12 +240,23 @@ a {
   }
 }
 
+//---------------
 .section {
   margin-top: 100px;
 }
 
 .h2 {
+  padding:0 auto;
+  text-align: left;
   font-weight: 700;
   font-size: 48px;
-  border: 1px solid $color3;
+  text-align: center;
 }
+
+.green_lit {
+  box-shadow: inset 14px 0px $color3;
+}
+//--------------
+
+//benefits
+
