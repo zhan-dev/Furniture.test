@@ -189,6 +189,7 @@ a:hover {
   color: white;
   padding: 14px 45px;
   border: none;
+  text-transform: uppercase;
 }
 
 .intro {
@@ -354,37 +355,123 @@ a:hover {
   border-bottom: 5px solid #44C697;
 }
 
-.sells-all-block-rel {
+.sells {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.sells-all {
+  margin-bottom: 40px;
+}
+
+.sells-all-block:hover {
+  margin-top: -15px;
+  -webkit-box-shadow: inset 0px 355px #44C697;
+          box-shadow: inset 0px 355px #44C697;
+  color: white;
+}
+
+.sells-all-rel {
   position: relative;
 }
 
-.sells-all-block-rel-marks {
+.sells-all-rel-marks {
   position: absolute;
   top: 0;
 }
 
-.sells-all-block-rel-marks small {
+.sells-all-rel-marks small {
   display: table;
   font-size: 18px;
   text-transform: uppercase;
   color: #fff;
   padding: 5px 15px;
-  margin-top: 5px;
-}
-
-.sells-all-block-rel-marks small:first-child {
   margin-top: 10px;
 }
 
-.sells-all-block-rel-marks small.hit {
+.sells-all-rel-marks small.hit {
   background-color: black;
 }
 
-.sells-all-block-rel-marks small.action {
+.sells-all-rel-marks small.action {
   background-color: #FF1B1B;
 }
 
-.sells-all-block-rel-marks small.new {
+.sells-all-rel-marks small.new {
   background-color: black;
+}
+
+.sells-all-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 586px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.sells-all-pr {
+  display: inline-block;
+}
+
+.sells-all-pr-discount {
+  color: #FF1B1B;
+}
+
+.sells-all-pr-old {
+  color: #BCBDBB;
+  font-size: 18px;
+  text-decoration: line-through;
+}
+
+.sells-all-name {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.sells-btn {
+  text-align: center;
+}
+
+.about_us-info {
+  background: url(/app/img/about_us/Rectangle174.png) no-repeat right;
+  height: 675px;
+  position: relative;
+}
+
+.about_us-text {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  max-width: 790px;
+  max-height: 475px;
+  background-color: #fff;
+  padding: 50px 50px 30px;
+  border-right: 15px solid #44C697;
+}
+
+.about_us-text p {
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22.5px;
+  font-style: normal;
+}
+
+.about_us-text p small {
+  text-transform: uppercase;
+  color: #44C697;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */

@@ -171,6 +171,7 @@ a {
           color: white;
           padding: 14px 45px;
           border: none;
+          text-transform: uppercase;
           }
         }
       }
@@ -323,37 +324,102 @@ a {
 }
 
 .sells {
-  &-all {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+    &-all {
+    margin-bottom: 40px;
     &-block {
-      &-rel {
-        position: relative;
-        &-marks {
-          position: absolute;
-          top: 0;
-          small {
-            display: table;
-            font-size: 18px;
-            text-transform: uppercase;
-            color: #fff;
-            padding: 5px 15px;
-            margin-top: 5px;
-            &:first-child{
-              margin-top: 10px;
-            }
-           
-            &.hit {
-              background-color: black;
-            }
-            &.action {
-              background-color: $action;
-            }
-            &.new {
-              background-color: black;
-            }
-          }
+      &:hover {
+        margin-top: -15px;
+        box-shadow: inset 0px 355px $color3;
+        color: white;
+      }
+    }
+    &-rel {
+      position: relative;
+      &-marks {
+        position: absolute;
+        top: 0;
+        small {
+          display: table;
+          font-size: 18px;
+          text-transform: uppercase;
+          color: #fff;
+          padding: 5px 15px;
+          margin-top: 10px;
           
+         
+          &.hit {
+            background-color: black;
+          }
+          &.action {
+            background-color: $action;
+          }
+          &.new {
+            background-color: black;
+          }
         }
       }
     }
+    &-price {
+      display: flex;
+      max-width: 586px;
+      justify-content: space-between;
+      padding: 15px;
+      font-size: 24px;
+      font-weight: 700;
+    }
+    &-pr {
+      display: inline-block;
+      &-discount {
+        color: $action;
+      }
+      &-old {
+        color: $color2;
+        font-size: 18px;
+        text-decoration: line-through;
+      }
+    }
+    &-name {
+      display: inline-block;
+      text-transform: uppercase;
+    }
+  }
+}
+//дополнение к меню
+.sells-btn {
+  text-align: center;
+}
+
+//About_us
+.about_us {
+
+  &-info {
+    background: url(/app/img/about_us/Rectangle174.png) no-repeat right;
+    height: 675px;
+    position: relative;
+  }
+  &-text {
+    position: absolute;
+    top: 50%;
+   transform: translate(0, -50%);
+    max-width: 790px;
+    max-height: 475px;
+    background-color: #fff;
+    padding: 50px 50px 30px;
+    border-right: 15px solid $color3;
+    p {
+      margin-bottom: 15px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22.5px;
+      font-style: normal;
+      small {
+        text-transform: uppercase;
+        color: $color3;
+        font-weight: 700;
+      }
+    } 
   }
 }
