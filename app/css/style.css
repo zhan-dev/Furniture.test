@@ -328,4 +328,63 @@ a:hover {
 .features-second h3 {
   margin-top: 210px;
 }
+
+.categories-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.categories-all .div_wrap_h {
+  height: 100px;
+  line-height: 100px;
+}
+
+.categories-all small {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 10px;
+  border-bottom: 5px solid transparent;
+}
+
+.categories-all small:hover {
+  border-bottom: 5px solid #44C697;
+}
+
+.sells-all-block-rel {
+  position: relative;
+}
+
+.sells-all-block-rel-marks {
+  position: absolute;
+  top: 0;
+}
+
+.sells-all-block-rel-marks small {
+  display: table;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 5px 15px;
+  margin-top: 5px;
+}
+
+.sells-all-block-rel-marks small:first-child {
+  margin-top: 10px;
+}
+
+.sells-all-block-rel-marks small.hit {
+  background-color: black;
+}
+
+.sells-all-block-rel-marks small.action {
+  background-color: #FF1B1B;
+}
+
+.sells-all-block-rel-marks small.new {
+  background-color: black;
+}
 /*# sourceMappingURL=style.css.map */

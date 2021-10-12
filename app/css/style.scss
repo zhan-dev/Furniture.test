@@ -278,7 +278,6 @@ a {
   p {
     display: inline-block;
     position: absolute;
-  //  margin-top: -70px;
     font-weight: 400;
     font-size: 18px;
     line-height: 22,5;
@@ -302,3 +301,59 @@ a {
   }
 }
 
+.categories {
+  &-all {
+    display: flex;
+    justify-content: space-around;
+    .div_wrap_h {
+      height: 100px;
+      line-height: 100px;
+    }
+    small {
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 10px;
+      border-bottom: 5px solid transparent;
+      &:hover {
+        border-bottom: 5px solid $color3;
+      }
+    }
+  }
+}
+
+.sells {
+  &-all {
+    &-block {
+      &-rel {
+        position: relative;
+        &-marks {
+          position: absolute;
+          top: 0;
+          small {
+            display: table;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: #fff;
+            padding: 5px 15px;
+            margin-top: 5px;
+            &:first-child{
+              margin-top: 10px;
+            }
+           
+            &.hit {
+              background-color: black;
+            }
+            &.action {
+              background-color: $action;
+            }
+            &.new {
+              background-color: black;
+            }
+          }
+          
+        }
+      }
+    }
+  }
+}
