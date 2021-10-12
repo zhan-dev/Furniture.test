@@ -195,7 +195,7 @@ a:hover {
 .intro {
   margin-top: 185px;
   height: 785px;
-  background: url(/app/img/main_img.jpg) no-repeat center;
+  background: url(../img/main_img.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -223,7 +223,7 @@ a:hover {
 .intro .new .p2 {
   font-size: 36px;
   font-weight: 400;
-  line-height: 1.25;
+  line-height: 45px;
   margin-top: 20px;
 }
 
@@ -307,7 +307,7 @@ a:hover {
   position: absolute;
   font-weight: 400;
   font-size: 18px;
-  line-height: 22,5;
+  line-height: 22.5px;
   color: #BCBDBB;
   max-width: 525px;
   text-align: left;
@@ -379,6 +379,8 @@ a:hover {
 
 .sells-all-rel {
   position: relative;
+  min-width: 586px;
+  min-height: 300px;
 }
 
 .sells-all-rel-marks {
@@ -444,7 +446,7 @@ a:hover {
 }
 
 .about_us-info {
-  background: url(/app/img/about_us/Rectangle174.png) no-repeat right;
+  background: url(../img/about_us/Rectangle174.png) no-repeat right;
   height: 675px;
   position: relative;
 }
@@ -463,7 +465,7 @@ a:hover {
 
 .about_us-text p {
   margin-bottom: 15px;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 22.5px;
   font-style: normal;
@@ -476,13 +478,12 @@ a:hover {
 }
 
 .questions-info {
-  background: url(/app/img/questions/Rectangle175.png) no-repeat left;
+  background: url(../img/questions/Rectangle175.png) no-repeat left;
   height: 675px;
   position: relative;
 }
 
 .questions-text {
-  border: 1px solid red;
   text-align: left;
   right: 0;
   position: absolute;
@@ -509,11 +510,23 @@ a:hover {
   height: 50px;
   padding-left: 15px;
   font-size: 18px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .questions-text button {
   width: 100%;
   margin-bottom: 30px;
+}
+
+.questions p {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 22.5px;
+  font-weight: 400;
+}
+
+.questions p small {
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */
