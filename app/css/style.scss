@@ -403,7 +403,7 @@ a {
   &-text {
     position: absolute;
     top: 50%;
-   transform: translate(0, -50%);
+    transform: translate(0, -50%);
     max-width: 790px;
     max-height: 475px;
     background-color: #fff;
@@ -421,5 +421,37 @@ a {
         font-weight: 700;
       }
     } 
+  }
+}
+
+.questions {
+
+  &-info {
+    background: url(/app/img/questions/Rectangle175.png) no-repeat left;
+    height: 675px;
+    position: relative;
+  }
+  &-text {
+    right: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    max-width: 510px;
+    max-height: 460px;
+    background-color: #fff;
+    padding: 50px 50px 30px;
+    border-left: 15px solid $color3;
+    p {
+      margin-bottom: 15px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22.5px;
+      font-style: normal;
+      small {
+        text-transform: uppercase;
+        color: $color3;
+        font-weight: 700;
+      }
+    }
   }
 }
