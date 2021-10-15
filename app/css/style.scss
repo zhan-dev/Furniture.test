@@ -475,3 +475,69 @@ a {
     }
   }
 }
+
+footer {
+  background: url(../img/footer/Rectangle176.png) no-repeat right;
+  height: 520px;
+  background-color: #1E2E36;
+
+}
+
+
+.footer {
+  &-middle {
+    
+    .logo {
+      &-img {
+        display: inline-block;
+        margin-right: 15px;
+      }
+      &-site {
+        display: inline-block;
+        font-family: Proxima Nova;
+        margin-top: 50px;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 45px;
+        letter-spacing: 0em;
+        color:#fff;
+  
+        &-f {
+          color: $color3;
+        }
+      }
+    }
+  }
+
+  &-all {
+      margin-top: 50px;
+      font-size: 18px;
+      line-height: 22.5px;
+      
+    &-menu {
+      
+      max-width: 480px;
+      max-height: 260px;
+      border: 1px solid red;
+
+      &_ul {
+        display: flex;
+        max-height: 260px;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      a {
+      color: #fff;
+      text-transform: uppercase;
+      }
+      li {
+        margin-bottom: 15px;
+        &::before {
+          content:"— ";
+          color: $color3;
+        }
+      }
+    }
+  }
+}
