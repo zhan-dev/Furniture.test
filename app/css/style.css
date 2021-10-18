@@ -20,6 +20,7 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *, *::before, *::after {
@@ -535,6 +536,7 @@ footer {
   background: url(../img/footer/Rectangle176.png) no-repeat right;
   height: 520px;
   background-color: #1E2E36;
+  position: relative;
 }
 
 .footer-middle .logo-img {
@@ -565,16 +567,21 @@ footer {
 }
 
 .footer-all-menu {
-  max-width: 480px;
-  max-height: 260px;
-  border: 1px solid red;
+  position: relative;
+  max-width: 670px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-height: 230px;
 }
 
 .footer-all-menu_ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-height: 260px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -589,11 +596,63 @@ footer {
 }
 
 .footer-all-menu li {
+  margin-right: 60px;
   margin-bottom: 15px;
 }
 
 .footer-all-menu li::before {
   content: "— ";
   color: #44C697;
+}
+
+.footer-all-links {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22.5px;
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.footer-all-links div {
+  margin-bottom: 15px;
+}
+
+.footer-all-links-social {
+  margin-top: 22px;
+}
+
+.footer-all-links-social div {
+  margin-top: 5px;
+}
+
+.footer-all-links .sm2 {
+  display: block;
+  margin-left: 28px;
+}
+
+.footer-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 700px;
+  font-size: 14px;
+  margin-top: 90px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.footer-tags div small {
+  text-transform: uppercase;
+}
+
+.scroll_up {
+  top: -25px;
+  left: 20px;
+  position: absolute;
 }
 /*# sourceMappingURL=style.css.map */

@@ -14,5 +14,4 @@ $(document).ready(function(){
   $(".hit:empty").hide();
   $(".action:empty").hide();
 
-
 });
